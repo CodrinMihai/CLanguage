@@ -3,19 +3,19 @@
 
 int main()
 {
-    int a, b;
+    float a, b;
 
-    scanf("%d", &a);
-    scanf("%d", &b);
+    scanf("%f", &a);
+    scanf("%f", &b);
 
-    a = roundf(a * 100)/100;
-    b = roundf(b * 100)/100;
+    int c = (int) (a * 10000);
+    int d = (int) (b * 10000);
 
-    if( a != b) {
-        printf("NOT EQ");
-    }else {
+    if( c  == d ) {
         printf("EQ");
+    }else{
+        printf("NOT EQ");
     }
-// nu se poate 
+
     return 0;
 }
